@@ -1,0 +1,12 @@
+#install.packages("shiny")
+library(shiny)
+
+shinyUI( 
+  
+    selectInput("n_breaks", label = "Number of bins:",
+                choices = c(10, 20, 30, 50), selected = 10),
+    
+    sliderInput("bw_adjust", label = "Bandwidth adjustment:",
+                min = 0.2, max = 2, value = 1, step = 0.2)
+  
+)
