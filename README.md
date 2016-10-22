@@ -1,14 +1,9 @@
-# Developing-Data-Products
+# Course-Project--Shiny-Application-and-Reproducible-Pitch
 
-Instructions
+Guess The Number! Shiny Project and its Slidify Pitch Presentation
 
-Create a web page using R Markdown that features a map created with Leaflet.
+Description: Guess The Number! - The actual Shiny app files are in this directory
 
-Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+Slidify Pitch of Guess The Number! - The Slidifify Pitch files in md, Rmd and html format
 
-Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
-Review criterialess 
-The rubric contains the following two questions:
-
-Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
-Does the web page feature an interactive map that appears to have been created with Leaflet?
+Troubleshooting - Files off of the course website and web pertaining to problems encountered in the project and the corresponding solutions
