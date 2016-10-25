@@ -1,12 +1,34 @@
 #install.packages("shiny")
 library(shiny)
 
-shinyUI( 
-  
-    selectInput("n_breaks", label = "Number of bins:",
-                choices = c(10, 20, 30, 50), selected = 10),
+shinyUI(fluidPage(
+  titlePanel("Prediction of height of the child through his parents"),
+  sidebarLayout(
+    sidebarPanel(
+      helpText("This application predicts height of child through his gender and the height of the parents."),
+      helpText("Please make a choise of parameters:"),
+      sliderInput(inputId = "inFh",
+                  label = "Father's height in centimeters:",
+                  value = 150,
+                  min = 150,
+                  max = 200,
+                  step = 1),
+      sliderInput(inputId = "inMh",
+                  label = "Mother's height in centimeters:",
+                  value = 150,
+                  min = 150,
+                  max = 200,
+                  step = 1),
+      radioButtons(inputId = "inGen",
+                   label = "Child's gender: ",
+                   choices = c("Female"="female", "Male"="male"),
+                   inline = TRUE)
+    ),
     
-    sliderInput("bw_adjust", label = "Bandwidth adjustment:",
-                min = 0.2, max = 2, value = 1, step = 0.2)
-  
-)
+    mainPanel(
+      htmlOutput("parentsText"),
+      htmlOutput("prediction"),
+      plotOutput("barsPlot", width = "50%")
+    )
+  )
+))
