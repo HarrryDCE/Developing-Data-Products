@@ -1,9 +1,10 @@
 # Course-Project--Shiny-Application-and-Reproducible-Pitch
 
-Guess The Number! Shiny Project and its Slidify Pitch Presentation
+# Prediction of Child height through his parents
 
-Description: Guess The Number! - The actual Shiny app files are in this directory
-
-Slidify Pitch of Guess The Number! - The Slidifify Pitch files in md, Rmd and html format
-
-Troubleshooting - Files off of the course website and web pertaining to problems encountered in the project and the corresponding solutions
+This data product used dataset GaltonFamilies, in the HistData R package, to predicts height of child through his gender and the height of the parents.
+- This is the final presentation for the Course Project of the “Developing data products” course
+- This course is part of the “Data Science specialization”
+- The project consists in two activities:
+- Create a Shiny application
+- Create a presentation in Slidify or Rstudio Presenter to pitch for the application.
